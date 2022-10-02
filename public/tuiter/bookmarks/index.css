@@ -1,0 +1,136 @@
+body {
+    /*font-family: "Helvetica Neue";*/
+    font-family: "SF Pro";
+    background-color: black;
+    color: white;
+}
+
+.wd-title-border {
+    border: 1px solid #2f3336;
+}
+
+.wd-title-border h1 {
+    font-size: 20px;
+    padding-left: 16px;
+    margin-bottom: 0px;
+    margin-top: 12px;
+}
+.wd-handle {
+    color: #6e767d;
+    font-size: 13px;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    margin-bottom: 0px;
+}
+
+.wd-post {
+    border: 1px solid #2f3336;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+.wd-post img{
+    float: left;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+}
+
+.wd-info-top {
+    font-size: 15px;
+}
+
+.wd-author {
+    font-weight: bold;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.wd-time {
+    color: #6e767d;
+    padding-top: 12px;
+    padding-left: 8px;
+}
+
+.wd-post-text {
+    font-size: 15px;
+    max-width: 506px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 60px;
+    padding-top: 5px;
+}
+
+
+.wd-main-img {
+    height: 264px;
+    margin-left: 60px;
+    max-width: 506px;
+}
+
+.wd-main-img img {
+    /*float: right;*/
+    border-bottom: 1px solid #2f3336;
+    /*new*/
+    border: 1px solid #2f3336;
+    border-radius: 15px 15px 0px 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    width: 504px;
+    height: 264px;
+}
+
+.wd-main-content {
+    margin-left: 60px;
+    width: 504px;
+    border: 1px solid #2f3336;
+    border-radius: 0px 0px 15px 15px;
+    font-size: 15px;
+}
+
+.wd-main-title {
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.wd-main-text {
+    padding-top: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    color: #6e767d;
+}
+
+.wd-bar {
+    padding-top: 12px;
+    padding-bottom: 24px;
+    color: #6e767d;
+    margin-left: 60px;
+}
+
+.wd-bar-icon {
+    padding-right: 12px;
+}
+
+.wd-bar-text {
+    padding-right: 90px;
+}
+
+.wd-bar-icon-heart {
+    color: red;
+    padding-right: 12px;
+}
+
+.wd-bar-text-heart {
+    padding-right: 90px;
+    color: red;
+}
+
+.wd-bar a {
+    text-decoration: none;
+    color: inherit;
+}
