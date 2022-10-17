@@ -54,6 +54,8 @@ body a:hover {
     color: black;
     border: none;
     font-weight: bolder;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .wd-tuit-button {
