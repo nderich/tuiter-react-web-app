@@ -1,9 +1,12 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
+
+    // fw-bold
+
     return(`
             <ul class="list-group mt-2">
                 <li class="list-group-item wd-side-bar"><i class="fab fa-twitter"></i></li>
                 
-                <li class="list-group-item wd-side-bar">
+                <li class="home list-group-item wd-side-bar">
                     <a href="../HomeScreen/index.html">
                         <i class="fas fa-home d-xl-none"></i>
                         <span class="d-none d-xl-block row">
@@ -13,7 +16,7 @@ const NavigationSidebar = () => {
                     </a>
                 </li>
 
-                <li class="list-group-item fw-bold wd-side-bar">
+                <li class="explore list-group-item  wd-side-bar">
                     <a href="../ExploreComponent/index.html">
                         <i class="fas fa-hashtag d-xl-none"></i>
                         <span class="d-none d-xl-block row">
