@@ -51,14 +51,14 @@ const HomePostItem = (
                             <div className="card-body">
                                 <h6 className="card-title">{post.title}</h6>
                                 <div className="card-text text-muted">{post.subtitle}</div>
-                                <div className="card-text text-muted"><i className="bi bi-link-45deg"></i> {post.link}</div>
+                                <div className="card-text text-muted"><i className="bi bi-link-45deg"></i> npm {post.link}</div>
                             </div>
                         </div>
 
                         <div className="row text-muted mt-2">
                             <span className="col-3"><i className="bi bi-chat"></i> {post.comments}</span>
                             <span className="col-3"><i className="bi bi-share"></i> {post.retuits}</span>
-                            <span className="col-3"><i className="bi bi-heart"></i> {post.likes}</span>
+                            <span className="col-3"><i className="bi bi-heart"></i> {post.likes} </span>
                             <span className="col-3"><i className="bi bi-box-arrow-up"></i></span>
                         </div>
 
