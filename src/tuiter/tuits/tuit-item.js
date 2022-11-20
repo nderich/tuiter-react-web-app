@@ -1,7 +1,8 @@
 import React from "react";
 import TuitStats from "./tuit-stats"
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+// import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
     {
@@ -10,7 +11,8 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        // dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
             <li className="list-group-item">
@@ -31,6 +33,13 @@ const TuitItem = (
                             key={tuits._id}
                             tuits={tuits}
                         />
+                        {/*<div>*/}
+                        {/*    Likes: {tuits.likes}*/}
+                        {/*    <i onClick={() => dispatch(updateTuitThunk({*/}
+                        {/*        ...tuits,*/}
+                        {/*        likes: tuits.likes + 1*/}
+                        {/*    })} className="bi bi-heart-fill me-2 text-danger"></i>*/}
+                        {/*</div>*/}
 
                     </div>
                 </div>

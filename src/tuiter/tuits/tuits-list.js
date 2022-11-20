@@ -1,18 +1,29 @@
-import React from "react";
+import React, {useEffect} from "react";
 // import postsArray from './posts.json';
 import TuitItem from "./tuit-item";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {deleteTuit} from "./tuits-reducer";
-// add more!!!
+import {findTuitsThunk} from "../../services/tuits-thunks";
 
 const TuitsList = () => {
-    const postsArray = useSelector(state => state.tuits)
+    const {tuits, loading} = useSelector(state => state.tuitsData)
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(findTuitsThunk())
+    }, [])
+
     return(
         <>
             <div>
                 <ul className="list-group">
                     {
-                        postsArray.map(tuit =>
+                        loading &&
+                        <li className="list-group-item">
+                            Loading...
+                        </li>
+                    }
+                    {
+                        tuits.map(tuit =>
                             <TuitItem
                                 key={tuit._id}
                                 tuits={tuit}/> )
@@ -24,3 +35,22 @@ const TuitsList = () => {
 };
 export default TuitsList;
 
+
+//const TuitsList = () => {
+//     const postsArray = useSelector(state => state.tuits)
+//     return(
+//         <>
+//             <div>
+//                 <ul className="list-group">
+//                     {
+//                         postsArray.map(tuit =>
+//                             <TuitItem
+//                                 key={tuit._id}
+//                                 tuits={tuit}/> )
+//                     }
+//                 </ul>
+//             </div>
+//         </>
+//     );
+// };
+// export default TuitsList;
